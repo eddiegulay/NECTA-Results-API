@@ -1,0 +1,13 @@
+{
+    "name": "edgar/necta_api",
+    "description": "Tool to scrape web results from NECTA Website",
+    "type": "library",
+    "authors": [
+        {
+            "name": "eddiegulay"
+        }
+    ],
+    "require": {
+        "fabpot/goutte": "^3.3"
+    }    
+}
