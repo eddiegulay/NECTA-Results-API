@@ -112,4 +112,9 @@ Array
         )
 ...
 ```
+# Important
+The API only support 2020 and 2021 csee results for now. We are working on adding more years.
 
+# Contibutors   
+- [Eddie Gulay](https://github.com/eddiegulay)
+- [Gloria Madunda]()
