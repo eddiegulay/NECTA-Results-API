@@ -61,3 +61,55 @@ returned data is in groups of threes (each row has 3 **centers data**)
         )
 ...
 ```
+
+## Getting School results
+```php
+require 'school.php';
+
+$year = 2021;
+$school_reg_no = "p0104";
+
+$res = get_school_results($school_reg_no, $year);
+```
+## Output
+```php
+Array
+(
+    [0] => Array
+        (
+            [CNO] => CNO
+            [SEX] => SEX
+            [AGGT] => AGGT
+            [DIV] => DIV
+            [DETAILED SUBJECTS] => DETAILED SUBJECTS
+        )
+
+    [1] => Array
+        (
+            [CNO] => P0104/0001
+            [SEX] => F
+            [AGGT] => -
+            [DIV] => IV
+            [DETAILED SUBJECTS] => CIV - 'C' HIST - 'D' GEO - 'D' BIO - 'D'
+        )
+
+    [2] => Array
+        (
+            [CNO] => P0104/0002
+            [SEX] => F
+            [AGGT] => 35
+            [DIV] => 0
+            [DETAILED SUBJECTS] => CIV - 'F' HIST - 'F' GEO - 'F' KISW - 'F' ENGL - 'F' CHEM - 'F' BIO - 'F'
+        )
+
+    [3] => Array
+        (
+            [CNO] => P0104/0003
+            [SEX] => F
+            [AGGT] => -
+            [DIV] => IV
+            [DETAILED SUBJECTS] => GEO - 'D' BIO - 'D'
+        )
+...
+```
+
