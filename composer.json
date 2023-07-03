@@ -1,5 +1,5 @@
 {
-    "name": "edgar/necta_api",
+    "name": "eddiegulay/necta_api",
     "description": "Tool to scrape web results from NECTA Website",
     "type": "library",
     "authors": [
@@ -9,5 +9,15 @@
     ],
     "require": {
         "fabpot/goutte": "^3.3"
-    }    
+    },
+    "autoload": {
+        "psr-4": {
+            "Necta\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Necta\\Tests\\": "tests/"
+        }
+    }
 }

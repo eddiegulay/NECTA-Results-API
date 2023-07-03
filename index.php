@@ -1,7 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
-require 'Necta.php';
+require 'src/Necta/Necta.php';
 
 // Create a new instance of the Necta class
 $necta = new Necta();
