@@ -1,12 +1,29 @@
 <?php
-require 'school.php';
 
+require 'vendor/autoload.php';
+require 'Necta.php';
+
+// Create a new instance of the Necta class
+$necta = new Necta();
+
+// Example usage: Get centers for a specific year
 $year = 2021;
-$school_reg_no = "p0104";
+$centers = $necta->get_centers($year);
 
-$res = get_school_results($school_reg_no, $year);
+// Example usage: Get school results for a specific registration number and year
+$school_reg_no = 'S6137';
+$year = 2021;
+$results = $necta->get_school_results($school_reg_no, $year);
 
-print_r($res);
+// Display the results
+echo "Centers for year {$year}: <pre>";
+print_r($centers);
+echo "</pre>";
+
+echo "Results for school registration number {$school_reg_no} and year {$year}: <pre>";
+print_r($results);
+echo "</pre>";
+
+
 
 ?>
-
